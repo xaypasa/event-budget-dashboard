@@ -1,0 +1,18 @@
+@font-face {
+    font-family:"Noto Sans Lao", sans-serif;
+    src: url(../src/assets/fonts/NotoSansLao-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Black Ops One Local';
+  src: url('../src/assets/fonts/BlackOpsOne-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-lao: "Noto Sans Lao", sans-serif;
+  --font-title: "Black Ops One Local", system-ui;
+}
