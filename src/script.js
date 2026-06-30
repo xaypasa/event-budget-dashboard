@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentViews = document.querySelectorAll(".content-view");
     let myChart = null;
 
-    // 📊 ຟັງຊັນແຕ້ມກຣາຟໃຫ້ເຂົ້າກັບ Dark Mode ຂອງເວັບ
     function initChart() {
         const canvas = document.getElementById('monthlyBudgetChart');
         if (!canvas) return;
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 labels: ['ມັງກອນ', 'ກຸມພາ', 'ມີນາ', 'ເມສາ', 'ພຶດສະພາ', 'ມິຖຸນາ', 'ກໍລະກົດ', 'ສິງຫາ', 'ກັນຍາ', 'ຕຸລາ', 'ພະຈິກ', 'ທັນວາ'],
                 datasets: [
                     {
-                        label: '📈 ລາຍຮັບ (Income)',
+                        label: 'ລາຍຮັບ (Income)',
                         data: [15000000, 12000000, 18000000, 25000000, 9000000, 14000000, 0, 0, 0, 0, 0, 0],
                         backgroundColor: 'rgba(52, 211, 153, 0.85)', // ສີຂຽວ Emerald
                         borderColor: '#10b981',
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         borderRadius: 4
                     },
                     {
-                        label: '📉 ລາຍຈ່າຍ (Expense)',
+                        label: 'ລາຍຈ່າຍ (Expense)',
                         data: [5000000, 8000000, 4500000, 12000000, 6000000, 7000000, 0, 0, 0, 0, 0, 0],
                         backgroundColor: 'rgba(248, 113, 113, 0.85)', // ສີແດງ Rose
                         borderColor: '#f43f5e',
